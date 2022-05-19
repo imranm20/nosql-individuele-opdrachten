@@ -1,0 +1,12 @@
+<html>
+<H1>Verkrijg uw voorspelling!</H1>
+
+<body>
+    <form method="post"  action = '{{ url_for("voorspellen_wStoot")}}' style="width: 40%;">
+        <input name="v_gemwsnelheid" type='text' placeholder='Vul het de hoogste uurgemmidelde windsnelheid in:' required='required' />
+        <button type='submit'>Voorspel</button>
+    </form>
+    {{antwoord}}
+</body>
+
+</html>
